@@ -1,7 +1,7 @@
 FROM node:17
 
-COPY app.js /usr/src/app
+COPY app.js /usr/src/app/app.js
 
-RUN node /usr/src/app/app.js
+ENTRYPOINT ["node", "/usr/src/app/app.js"]
 
 EXPOSE 8091
